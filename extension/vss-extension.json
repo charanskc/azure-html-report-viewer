@@ -3,7 +3,7 @@
   "id": "azure-html-report-viewer",
   "publisher": "charan-s-vayigandla",
   "name": "Azure HTML Report Viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modern HTML and Playwright report viewer for Azure DevOps Pipelines.",
   "public": false,
   "categories": ["Azure Pipelines"],
