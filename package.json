@@ -1,0 +1,13 @@
+{
+  "name": "azure-devops-html-report-v2",
+  "private": true,
+  "version": "0.0.1",
+  "workspaces": [
+    "tasks/*",
+    "web/*"
+  ],
+  "scripts": {
+    "build": "echo \"build later\"",
+    "clean": "rm -rf dist"
+  }
+}

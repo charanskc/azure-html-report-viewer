@@ -1,0 +1,17 @@
+#toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--vss-border-subtle);
+  background: var(--vss-background-color);
+  color: var(--vss-primary-text);
+}
+
+#reportSelector {
+  padding: 4px 6px;
+}
+
+#loading {
+  color: var(--vss-secondary-text);
+}

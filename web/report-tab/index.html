@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML Report Viewer</title>
+  <script src="https://unpkg.com/azure-devops-extension-sdk@latest/dist/SDK.min.js"></script>
+</head>
+<body>
+  <div id="toolbar">
+  <label for="reportSelector">Report:</label>
+  <select id="reportSelector"></select>
+  <span id="loading" style="display:none">Loading…</span>
+</div>
+  <div id="root">
+    <h2>HTML Report Viewer</h2>
+    <p id="status">Initializing...</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

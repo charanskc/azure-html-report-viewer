@@ -1,0 +1,56 @@
+{
+  "manifestVersion": 1,
+  "id": "azure-html-report-viewer",
+  "publisher": "charan-s-vayigandla",
+  "name": "Azure HTML Report Viewer",
+  "version": "1.0.0",
+  "description": "Modern HTML and Playwright report viewer for Azure DevOps Pipelines.",
+  "public": false,
+  "categories": ["Azure Pipelines"],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "icons": {
+    "default": "images/icon.png"
+  },
+
+"files": [
+  {
+    "path": "../PublishHtmlReport",
+    "packagePath": "PublishHtmlReport"
+  },
+  {
+    "path": "dist/report-tab",
+    "packagePath": "dist/report-tab",
+    "addressable": true
+  },
+  {
+    "path": "images",
+    "addressable": true
+  }
+],
+  "contributions": [
+    {
+      "id": "html-report-tab",
+      "type": "ms.vss-build-web.build-results-tab",
+      "targets": ["ms.vss-build-web.build-results-view"],
+      "properties": {
+        "name": "HTML Report",
+        "uri": "dist/report-tab/index.html",
+        "supportsTasks": [
+          "2dba3e67-36bb-4e1a-8d4a-9c12c8b2c201"
+        ]
+      }
+    },
+    {
+      "id": "publishHtmlReport",
+      "type": "ms.vss-distributed-task.task",
+      "targets": ["ms.vss-distributed-task.tasks"],
+      "properties": {
+        "name": "PublishHtmlReport"
+      }
+    }
+  ]
+}
