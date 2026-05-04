@@ -1,36 +1,45 @@
 {
   "manifestVersion": 1,
-  "id": "azure-html-report-viewer",
+  "id": "azure-pipeline-html-report-viewer",
   "publisher": "charan-s-vayigandla",
   "name": "Azure HTML Report Viewer",
-  "version": "1.0.2",
-  "description": "Modern HTML and Playwright report viewer for Azure DevOps Pipelines.",
-  "public": false,
+  "version": "1.0.1",
+  "description": "HTML and Playwright test report viewer for Azure DevOps Pipelines with screenshots, videos, and rich assets.",
+  "public": true,
   "categories": ["Azure Pipelines"],
+  "icons": {
+    "default": "images/icon.png"
+  },
+  "tags": [
+    "test",
+    "reporting",
+    "playwright",
+    "HTML"
+  ],
+  "links": {
+    "support": {
+      "uri": "https://github.com/charanskc/azure-html-report-viewer/issues"
+    },
+    "repository": {
+      "uri": "https://github.com/charanskc/azure-html-report-viewer"
+    },
+    "license": {
+      "uri": "https://github.com/charanskc/azure-html-report-viewer/blob/main/LICENSE.md"
+    }
+  },
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
-  "icons": {
-    "default": "images/icon.png"
+  "content": {
+    "details": {
+      "path": "overview.md"
+    },
+    "license": {
+      "path": "LICENSE.md"
+    }
   },
-
-"files": [
-  {
-    "path": "../PublishHtmlReport",
-    "packagePath": "PublishHtmlReport"
-  },
-  {
-    "path": "dist/report-tab",
-    "packagePath": "dist/report-tab",
-    "addressable": true
-  },
-  {
-    "path": "images",
-    "addressable": true
-  }
-],
   "contributions": [
     {
       "id": "html-report-tab",
@@ -51,6 +60,31 @@
       "properties": {
         "name": "PublishHtmlReport"
       }
+    }
+  ],
+  "files": [
+    {
+      "path": "../LICENSE.md",
+      "packagePath": "LICENSE.md"
+    },
+    {
+      "path": "overview.md",
+      "packagePath": "overview.md"
+    },
+    {
+      "path": "../PublishHtmlReport",
+      "packagePath": "PublishHtmlReport",
+      "addressable": false
+    },
+    {
+      "path": "dist/report-tab",
+      "packagePath": "dist/report-tab",
+      "addressable": true
+    },
+    {
+      "path": "images",
+      "packagePath": "images",
+      "addressable": true
     }
   ]
 }

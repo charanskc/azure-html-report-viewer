@@ -3,12 +3,11 @@
   "name": "PublishHtmlReport",
   "friendlyName": "Publish HTML Report",
   "description": "Publish an HTML (Playwright-compatible) report to Azure DevOps pipeline",
-  "author": "Internal",
+  "author": "Vayigandla Sai Charan",
   "helpMarkDown": "Publishes an HTML report and assets for viewing inside Azure DevOps Pipelines.",
   "instanceNameFormat": "Publish HTML Report",
   "category": "Utility",
   "visibility": ["Build"],
-  "runsOn": ["Agent"],
   "version": {
     "Major": 1,
     "Minor": 0,
@@ -31,7 +30,7 @@
     }
   ],
   "execution": {
-    "Node20_1": {
+    "Node20": {
       "target": "index.js"
     }
   }
